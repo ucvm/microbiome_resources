@@ -1,7 +1,5 @@
 name: "Microbiome Foundations"
 output:
   html_document:
-    theme: "readable"
-    toc: true
-    toc_float: true
+    theme: "sandstone"
 output_dir: "docs"

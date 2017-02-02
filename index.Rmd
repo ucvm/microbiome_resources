@@ -3,12 +3,35 @@ title: "Microbiome resources"
 ---
 
 
-A collection of good journal articles related to methods used to study the microbiome.  Unlike the popular [Microbiome Digest](https://microbiomedigest.com/) the purpose of this page is to provide a list of curated foundational papers that, for the most part, will remain static.  Contributions, in the form of pull requests on the github page are welcome.  Please include a description of the paper indicating its importance to the field.
+A collection of good journal articles related to methods used to study the microbiome. Contributions, in the form of pull requests on the github page are welcome.  Please include a description of the paper indicating its importance to the field.
 
-## Amplicon Sequencing
+## Must Reads
 
-### 16S sequencing on the Illumina platform
+*Foundational methods paper describing how to do amplicon sequencing data using paired-end sequencing on the MiSeq.*
 
-Kozich JJ, Westcott SL, Baxter NT, Highlander SK, Schloss PD. Development of a Dual-Index Sequencing Strategy and Curation Pipeline for Analyzing Amplicon Sequence Data on the MiSeq Illumina Sequencing Platform. Appl Environ Microbiol. American Society for Microbiology (ASM); 2013;79: 5112–5120. doi:10.1128/AEM.01043-13
+ * Kozich JJ, Westcott SL, Baxter NT, Highlander SK, Schloss PD. Development of a Dual-Index Sequencing Strategy and Curation Pipeline for Analyzing Amplicon Sequence Data on the MiSeq Illumina Sequencing Platform. Appl Environ Microbiol. American Society for Microbiology (ASM); 2013;79: 5112–5120. [link](http://aem.asm.org/content/early/2013/06/17/AEM.01043-13)
 
-Bartram AK, Lynch MDJ, Stearns JC, Moreno-Hagelsieb G, Neufeld JD. Generation of multimillion-sequence 16S rRNA gene libraries from complex microbial communities by assembling paired-end illumina reads. Appl Environ Microbiol. American Society for Microbiology; 2011;77: 3846–3852. doi:10.1128/AEM.02772-10
+
+*The 'kitome' paper.  Why blanks are absolutely essential*
+
+* Salter SJ, Cox MJ, Turek EM, Calus ST, Cookson WO, Moffatt MF, et al. Reagent and laboratory contamination can critically impact sequence-based microbiome analyses. BMC Biology 2015 13:1. BioMed Central; 2014;12: 1.  [link](http://bmcbiol.biomedcentral.com/articles/10.1186/s12915-014-0087-z)
+
+*Why it's really not a good idea to 'rarefy'.  Also good evidence for using DESeq2 for identification of differentially abundant OTUs*
+
+* McMurdie PJ, Holmes S. Waste Not, Want Not: Why Rarefying Microbiome Data Is Inadmissible. McHardy AC, editor. PLoS Comp Biol. Public Library of Science (PLoS); 2014;10: e1003531.  [link](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003531)
+
+
+## Good blog posts 
+
+*Note that this is not a list of good blog sites - just single blog posts that are informative and useful*
+
+Why do I have such a large distance matrix? - The mothur blog by Pat Schloss [link](http://blog.mothur.org/2014/09/11/Why-such-a-large-distance-matrix/)
+ 
+ *A rather humorous blog post by Pat Scloss on why you should sequence way more than you think you need, and throw out anything without good quality and overlapping pairs*
+
+
+## Other Collections 
+
+All of [Microbiome Digest](https://microbiomedigest.com/) is particularly good but here are a couple of useful collections from that website.
+
+* [Extraction and Amplification](https://microbiomedigest.com/microbiome-papers-collection/microbiome-techniques/extraction-and-amplification/)

@@ -15,13 +15,10 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
@@ -112,101 +109,6 @@ $(document).ready(function () {
 
 
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
-
-
 
 
 <div class="fluid-row" id="header">
@@ -218,20 +120,38 @@ div.tocify {
 </div>
 
 
-<p>A collection of good journal articles related to methods used to study the microbiome. Unlike the popular <a href="https://microbiomedigest.com/">Microbiome Digest</a> the purpose of this page is to provide a list of curated foundational papers that, for the most part, will remain static. Contributions, in the form of pull requests on the github page are welcome. Please include a description of the paper indicating its importance to the field.</p>
-<div id="amplicon-sequencing" class="section level2">
-<h2>Amplicon Sequencing</h2>
-<div id="s-sequencing-on-the-illumina-platform" class="section level3">
-<h3>16S sequencing on the Illumina platform</h3>
-<p>Kozich JJ, Westcott SL, Baxter NT, Highlander SK, Schloss PD. Development of a Dual-Index Sequencing Strategy and Curation Pipeline for Analyzing Amplicon Sequence Data on the MiSeq Illumina Sequencing Platform. Appl Environ Microbiol. American Society for Microbiology (ASM); 2013;79: 5112–5120. <a href="doi:10.1128/AEM.01043-13" class="uri">doi:10.1128/AEM.01043-13</a></p>
-<p>Bartram AK, Lynch MDJ, Stearns JC, Moreno-Hagelsieb G, Neufeld JD. Generation of multimillion-sequence 16S rRNA gene libraries from complex microbial communities by assembling paired-end illumina reads. Appl Environ Microbiol. American Society for Microbiology; 2011;77: 3846–3852. <a href="doi:10.1128/AEM.02772-10" class="uri">doi:10.1128/AEM.02772-10</a></p>
+<p>A collection of good journal articles related to methods used to study the microbiome. Contributions, in the form of pull requests on the github page are welcome. Please include a description of the paper indicating its importance to the field.</p>
+<div id="must-reads" class="section level2">
+<h2>Must Reads</h2>
+<p><em>Foundational methods paper describing how to do amplicon sequencing data using paired-end sequencing on the MiSeq.</em></p>
+<ul>
+<li>Kozich JJ, Westcott SL, Baxter NT, Highlander SK, Schloss PD. Development of a Dual-Index Sequencing Strategy and Curation Pipeline for Analyzing Amplicon Sequence Data on the MiSeq Illumina Sequencing Platform. Appl Environ Microbiol. American Society for Microbiology (ASM); 2013;79: 5112–5120. <a href="http://aem.asm.org/content/early/2013/06/17/AEM.01043-13">link</a></li>
+</ul>
+<p><em>The ‘kitome’ paper. Why blanks are absolutely essential</em></p>
+<ul>
+<li>Salter SJ, Cox MJ, Turek EM, Calus ST, Cookson WO, Moffatt MF, et al. Reagent and laboratory contamination can critically impact sequence-based microbiome analyses. BMC Biology 2015 13:1. BioMed Central; 2014;12: 1. <a href="http://bmcbiol.biomedcentral.com/articles/10.1186/s12915-014-0087-z">link</a></li>
+</ul>
+<p><em>Why it’s really not a good idea to ‘rarefy’. Also good evidence for using DESeq2 for identification of differentially abundant OTUs</em></p>
+<ul>
+<li>McMurdie PJ, Holmes S. Waste Not, Want Not: Why Rarefying Microbiome Data Is Inadmissible. McHardy AC, editor. PLoS Comp Biol. Public Library of Science (PLoS); 2014;10: e1003531. <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003531">link</a></li>
+</ul>
 </div>
+<div id="good-blog-posts" class="section level2">
+<h2>Good blog posts</h2>
+<p><em>Note that this is not a list of good blog sites - just single blog posts that are informative and useful</em></p>
+<p>Why do I have such a large distance matrix? - The mothur blog by Pat Schloss <a href="http://blog.mothur.org/2014/09/11/Why-such-a-large-distance-matrix/">link</a></p>
+<p><em>A rather humorous blog post by Pat Scloss on why you should sequence way more than you think you need, and throw out anything without good quality and overlapping pairs</em></p>
+</div>
+<div id="other-collections" class="section level2">
+<h2>Other Collections</h2>
+<p>All of <a href="https://microbiomedigest.com/">Microbiome Digest</a> is particularly good but here are a couple of useful collections from that website.</p>
+<ul>
+<li><a href="https://microbiomedigest.com/microbiome-papers-collection/microbiome-techniques/extraction-and-amplification/">Extraction and Amplification</a></li>
+</ul>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 
