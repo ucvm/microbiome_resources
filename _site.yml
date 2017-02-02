@@ -1,0 +1,7 @@
+name: "Microbiome Foundations"
+output:
+  html_document:
+    theme: "readable"
+    toc: true
+    toc_float: true
+output_dir: "docs"

@@ -1,0 +1,14 @@
+---
+title: "Microbiome resources"
+---
+
+
+A collection of good journal articles related to methods used to study the microbiome.  Unlike the popular [Microbiome Digest](https://microbiomedigest.com/) the purpose of this page is to provide a list of curated foundational papers that, for the most part, will remain static.  Contributions, in the form of pull requests on the github page are welcome.  Please include a description of the paper indicating its importance to the field.
+
+## Amplicon Sequencing
+
+### 16S sequencing on the Illumina platform
+
+Kozich JJ, Westcott SL, Baxter NT, Highlander SK, Schloss PD. Development of a Dual-Index Sequencing Strategy and Curation Pipeline for Analyzing Amplicon Sequence Data on the MiSeq Illumina Sequencing Platform. Appl Environ Microbiol. American Society for Microbiology (ASM); 2013;79: 5112–5120. doi:10.1128/AEM.01043-13
+
+Bartram AK, Lynch MDJ, Stearns JC, Moreno-Hagelsieb G, Neufeld JD. Generation of multimillion-sequence 16S rRNA gene libraries from complex microbial communities by assembling paired-end illumina reads. Appl Environ Microbiol. American Society for Microbiology; 2011;77: 3846–3852. doi:10.1128/AEM.02772-10
